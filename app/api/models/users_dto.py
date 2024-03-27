@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class UsersDTO(BaseModel):
     id: int
     isactive: bool
@@ -7,7 +8,7 @@ class UsersDTO(BaseModel):
     email: str
     fullname: str
     passwd: str
-    
+
     class Config:
-        from_attributes=True
+        from_attributes = True
         # orm_mode=True

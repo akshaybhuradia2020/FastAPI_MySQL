@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "user-related-operations"
+version = "0.1.0"
+description = ""
+authors = ["akshaybhuradia2020 <akshaybhuradia25@gmail.com>"]
+readme = "README.md"
+package-mode = false
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+asyncmy = "^0.2.9"
+pytest = "^8.1.1"
+httpx = "^0.27.0"
+black = "^24.3.0"
+ruff = "^0.3.4"
+
+[tool.pytest.ini_options]
+addopts = ["."]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
